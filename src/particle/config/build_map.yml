@@ -1,0 +1,52 @@
+# Configuration for building the mesh map
+
+# ----------------------------------------------
+
+### path specifying
+# the folder of raw LiDAR scans
+scan_folder: '../../lio_sam/data_park/bin'
+# the path of ground truth pose file
+pose_file: '../../lio_sam/data_park/pose_kitti.txt'
+# the path of the generated mesh map
+mesh_file: '../../lio_sam/data_park/park.ply'
+
+### parameter settings
+# number of scans to build the mesh map
+n_scans: -1
+
+# the size of local map for building local mesh
+local_map_size: 100
+
+# flag to visualize the mesh map
+visualize: True
+
+# parameter for poisson reconstruction
+depth: 9                   # depth of poisson reconstruction
+min_density: 0.1           # min_density of poisson reconstruction
+voxel_size: 1            # downsample voxel size
+crop_x: 30                 # crop the point clouds in x axis
+crop_y: 30                 # crop the point clouds in y axis
+crop_z: 5                  # crop the point clouds in z axis
+
+# parameter for ground segmentation
+distance_threshold: 0.3    # plane segment distance threshold
+ransac_n: 3                # plane segment ransac_n
+num_iterations: 100        # plane segment num_iterations
+simplify_resolution: 1     # ground simplify resolution [meter]
+number_of_iterations: 1    # ground smoother iteration
+ground_color: [1, 0, 0]    # ground color RGB
+rest_color: [0, 0, 1]      # rest color RGB
+
+# range image parameters
+range_image:
+  height: 64
+  width: 900
+  fov_up: 15
+  fov_down: -15
+  max_range: 131.0
+  min_range: 0.3
+
+
+
+
+

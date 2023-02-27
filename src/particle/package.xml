@@ -1,0 +1,17 @@
+<package format="2">
+  <name>particle</name>
+  <version>0.0.0</version>
+  <description>The particle package</description>
+  <maintainer email="2356940823@qq.com">zhaohaowu</maintainer>
+  <license>TODO</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>roscpp</build_depend>
+  <build_export_depend>roscpp</build_export_depend>
+  <exec_depend>roscpp</exec_depend>
+  <build_depend>rospy</build_depend>
+  <build_export_depend>rospy</build_export_depend>
+  <exec_depend>rospy</exec_depend>
+
+</package>
+

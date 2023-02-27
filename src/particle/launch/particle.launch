@@ -1,0 +1,9 @@
+<launch>
+  <node name="particle" pkg="particle" type="particle.py" output="screen">
+    <!-- <remap from="/velodyne_points" to="/rslidar_points" />
+    <remap from="/initial_odom" to="/initial_odom" />
+    <remap from="/particle_odom" to="/particle_odom" /> -->
+  </node>
+  <!-- <node pkg="rviz" type="rviz" name="rviz" args="-d $(find particle)/rviz/particle.rviz" /> -->
+</launch>
+
